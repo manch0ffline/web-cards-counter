@@ -1,0 +1,83 @@
+@import "./styles/variables.scss";
+@import "./components/PlayersList/PlayersList.scss";
+@import "./components/Player/PlayerCard.scss";
+@import "./components/Loader/Loader.scss";
+@import "./components/WindowOfDelete/WindowOfDelete.scss";
+
+body {
+  background-color: $background-color;
+  min-width: 320px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  padding: 20px;
+
+  &__content {
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    background-color: $dark-green;
+  }
+
+  &__title {
+    font-size: 40px;
+    color: $text-color;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  &__add-button {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: $button-green;
+    color: $text-color;
+
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  &__input {
+    width: 100%;
+    height: 40px;
+  }
+
+  &__add-input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    background-color: $background-color;
+  }
+
+  &__add-input-container-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  &__error-mesage {
+    width: 100%;
+    word-break: break-word;
+    padding-block: 40px;
+    text-align: center;
+    color: $text-color;
+    font-size: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+}

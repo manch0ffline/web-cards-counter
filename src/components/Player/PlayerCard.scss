@@ -1,0 +1,69 @@
+.player {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  color: $text-color;
+  background-color: $light-green;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__name {
+    font-size: 20px;
+    color: $text-color;
+    font-weight: 600;
+  }
+
+  &__number-of-wins {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    &__container {
+      display: flex;
+      gap: 12px;
+      font-size: 20px;
+    }
+  }
+
+  &__icon {
+    font-size: 20px;
+  }
+
+  &__line {
+    width: 100%;
+    height: 1px;
+    background-color: $background-color;
+  }
+
+  &__game-score {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__add-score-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__add-button {
+    width: 20%;
+    height: 30px;
+    border: 0;
+    border-radius: 3px;
+    font-size: 15px;
+  }
+}
